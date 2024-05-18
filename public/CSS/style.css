@@ -1,0 +1,189 @@
+.background{
+    background-color:rgb(199, 191, 191);
+}
+
+/* ------------- img hover effect------------- */
+.card-img-top{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.img-top:hover .card-img-top{
+    opacity: 0.3;
+}
+/* -------- button read more----------- */
+.mybtn{
+    background-color:rgb(199, 191, 191 );
+    color: black;
+    font-weight: 700;   
+border: none;
+}
+.mybtn:hover{
+    background-color:rgb(167, 156, 156);
+    color: black;
+    font-weight: 700;
+    border: 1px solid black;  
+
+}
+
+
+/* ------ navbar link active------- */
+.nav-link:hover{
+    color:rgb(27, 24, 24);
+    border-bottom: 2px solid rgb(39, 37, 37);
+    font-weight: 600;
+    font-size: 14px;
+
+}
+.nav-link{
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* --------- card title --------------- */
+.card-title{
+    font-size: 14px;
+    height: 100px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 7px;
+    color: black;
+}
+.card-title:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* -------------- card descraption --------------------- */
+.card-text{
+    font-size: 12px;
+    height: 200px;
+    overflow: auto;
+}
+.card-text::-webkit-scrollbar{
+    display: none;
+}
+
+/* ---------- author or date--------------- */
+.items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -25px;
+    align-items: center;
+}
+.item1{
+    font-weight: 500;
+    /* justify-items: center; */
+    align-items: center;
+    color: blue;
+    margin-top: 5px;
+    font-size: 11px;
+}
+.item{
+    font-size: 9px;
+    margin-top: 5px;
+}
+.item1:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color:rgb(5, 5, 114);
+}
+
+
+
+/* ---------------- footer -------------------- */
+
+.span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.social-network{
+    background-color:rgb(156, 212, 235);
+}
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+}
+.icon:hover{
+background-color:#f8f9fa;
+box-shadow: 1px 1px 1px;
+
+}
+.copyright{
+    display: flex;
+
+}
+.copyright div{
+    display: flex;
+    margin: auto;
+    
+}
+.copyright div p{
+    margin-left: 45px;
+}
+
+/* -------------------------------  media query  responsive design------------------------ */
+
+@media only screen and (min-width:992px) and (max-width:1199px){
+    .card-text{
+        
+        height: 150px;
+        overflow: auto;
+    }
+    .card-title{
+       
+        height: 60px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+}
+@media only screen and (min-width:765px) and (max-width:991px){
+    .card-text{
+        
+        height: 120px;
+        overflow: auto;
+    }
+    .card-title{
+        height:60px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+}
+
+@media only screen and (min-width:575px) and (max-width:765px){
+    .card-text{
+        
+        height: 100px;
+        overflow: auto;
+    }
+    .card-title{
+        height:50px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+}
+@media only screen and (min-width:0px) and (max-width:575px){
+    .card-text{
+        
+        height: 80px;
+        overflow: auto;
+    }
+    .card-title{
+        height:40px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+}
+.mm{
+    border: none;
+}
+/* .scoller{
+    overflow: hidden;
+} */
